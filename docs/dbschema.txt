@@ -1,0 +1,54 @@
+# dbschema for OnlineMenu
+
+
+
+account, view, url
+url => /register
+url => /obtain-token
+url => /logout
+
+User
+-
+ID PK int
+FullName string
+Mobile
+
+
+
+Restaurant
+-
+ID PK int
+Logo image
+Name str
+Label str
+Address text
+Mobile 
+Rank choice (1, 5)
+
+
+Category
+----
+ID PK int
+Name str
+Label str
+
+
+
+
+Product
+----
+ID PK int
+Name str
+Label str
+ImageID fk Images
+Description text
+Price int
+Category_id fk from Category
+
+
+
+Images
+----
+ID pk int
+ProductId fk from Products
+Url str

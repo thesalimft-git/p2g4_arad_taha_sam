@@ -1,0 +1,8 @@
+account app:
+- plan to create an app name (account) that use 
+django user base model. 
+- add fullname: (str 50: null blank) and phone(str 12: null blank) fields.
+- write model, view, urls, and serializer for /register, /obtain-token and /logout
+- /register will ask for phone, username, password only
+- /obtain-token ask for username and password and give a token (TokenAuthentication)
+- /logout will expire the token
